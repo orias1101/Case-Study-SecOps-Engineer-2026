@@ -11,9 +11,9 @@
 3. **[kubectl](https://kubernetes.io/docs/tasks/tools/)**: Command-line tool để tương tác với Kubernetes.
 4. **[Trivy](https://aquasecurity.github.io/trivy/v0.50/getting-started/installation/)** *(Tùy chọn nhưng khuyến nghị)*: Tải file `trivy.exe` và đặt cùng thư mục với dự án để script tự động quét bảo mật file YAML.
 
-## 📁 Cấu trúc thư mục
+### 📁 Cấu trúc thư mục
 
-Đảm bảo bạn có các file sau trong cùng một thư mục:
+Đảm bảo có các file sau trong cùng một thư mục:
 
 * `run.bat`: Script khởi chạy cho Windows.
 * `lab.ps1`: Script PowerShell thực hiện các bước chính của Lab.
@@ -24,11 +24,13 @@
 * `app.py`: Mã nguồn ứng dụng Python giả lập (đã được nhúng thẳng vào lệnh khởi chạy trong Pod).
 * `trivy.exe` *(Tùy chọn)*: Đặt ở đây nếu muốn script tự động chạy rà quét bảo mật.
 
-## 🚀 Hướng dẫn chạy Lab
+### 🚀 Hướng dẫn chạy Lab
 
 1. Mở Terminal (Command Prompt hoặc PowerShell) với quyền Administrator (nếu cần thiết cho cấu hình execution policy).
 2. Di chuyển đến thư mục chứa dự án.
 3. Chạy file batch:
+
+## Task 2: ZTNA / Identity-aware Proxy
 
 ### 🛠 Hướng dẫn chạy POC (Local)
 
