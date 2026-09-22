@@ -1,6 +1,36 @@
-# ZTNA / Identity-Aware Proxy (IAP) Design & POC
+# Case-Study-SecOps-Engineer-2026
 
-## 🛠 Hướng dẫn chạy POC (Local)
+## Task 1: Kubernetes Security Hardening 
+
+### 📋 Yêu cầu hệ thống (Prerequisites)
+
+Để chạy được bài Lab này, máy tính của bạn (đặc biệt là Windows) cần cài đặt sẵn các công cụ sau:
+
+1. **[Docker Desktop](https://www.docker.com/products/docker-desktop/)**: Phải đang chạy ngầm (running) để Kind có thể tạo container.
+2. **[Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)**: Công cụ để chạy local Kubernetes cluster.
+3. **[kubectl](https://kubernetes.io/docs/tasks/tools/)**: Command-line tool để tương tác với Kubernetes.
+4. **[Trivy](https://aquasecurity.github.io/trivy/v0.50/getting-started/installation/)** *(Tùy chọn nhưng khuyến nghị)*: Tải file `trivy.exe` và đặt cùng thư mục với dự án để script tự động quét bảo mật file YAML.
+
+## 📁 Cấu trúc thư mục
+
+Đảm bảo bạn có các file sau trong cùng một thư mục:
+
+* `run.bat`: Script khởi chạy cho Windows.
+* `lab.ps1`: Script PowerShell thực hiện các bước chính của Lab.
+* `kind-config.yaml`: Cấu hình cụm Kind (Cluster).
+* `deployment-vulnerable.yaml`: File triển khai cố tình để lại các lỗ hổng bảo mật (chạy root, không giới hạn tài nguyên, hardcode mật khẩu, mount host root...).
+* `deployment-secure.yaml`: File triển khai đã được áp dụng các tiêu chuẩn bảo mật.
+* `secret.yaml`: Định nghĩa K8s Secret an toàn.
+* `app.py`: Mã nguồn ứng dụng Python giả lập (đã được nhúng thẳng vào lệnh khởi chạy trong Pod).
+* `trivy.exe` *(Tùy chọn)*: Đặt ở đây nếu muốn script tự động chạy rà quét bảo mật.
+
+## 🚀 Hướng dẫn chạy Lab
+
+1. Mở Terminal (Command Prompt hoặc PowerShell) với quyền Administrator (nếu cần thiết cho cấu hình execution policy).
+2. Di chuyển đến thư mục chứa dự án.
+3. Chạy file batch:
+
+### 🛠 Hướng dẫn chạy POC (Local)
 
 POC mô phỏng việc bảo vệ 2 dịch vụ:
 1. **Internal Web App (HTTP)**: Ứng dụng web nội bộ (`httpbin`).
