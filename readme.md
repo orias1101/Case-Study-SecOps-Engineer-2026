@@ -44,9 +44,9 @@ POC mô phỏng việc bảo vệ 2 dịch vụ:
 
 **Bước 1: Cấu hình DNS local**
 Thêm các record sau vào file `/etc/hosts` (hoặc `C:\Windows\System32\drivers\etc\hosts`):
-127.0.0.1   auth.localhost.pomerium.io
-127.0.0.1   webapp.localhost.pomerium.io
-127.0.0.1   ssh.localhost.pomerium.io
+1. 127.0.0.1   auth.localhost.pomerium.io
+2. 127.0.0.1   webapp.localhost.pomerium.io
+3. 127.0.0.1   ssh.localhost.pomerium.io
 
 **Bước 2: Thiết lập IdP (Identity Provider)**
 1. Tạo một OAuth App trên GitHub.
