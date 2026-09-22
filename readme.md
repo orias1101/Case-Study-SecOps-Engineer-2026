@@ -27,7 +27,7 @@
 
 1. Mở Terminal (Command Prompt hoặc PowerShell) với quyền Administrator (nếu cần thiết cho cấu hình execution policy).
 2. Di chuyển đến thư mục chứa dự án.
-3. Chạy file batch:
+3. Chạy file run.bat
 
 ## Task 2: ZTNA / Identity-aware Proxy
 
