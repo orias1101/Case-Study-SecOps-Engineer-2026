@@ -9,7 +9,6 @@
 1. **[Docker Desktop](https://www.docker.com/products/docker-desktop/)**: Phải đang chạy ngầm (running) để Kind có thể tạo container.
 2. **[Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)**: Công cụ để chạy local Kubernetes cluster.
 3. **[kubectl](https://kubernetes.io/docs/tasks/tools/)**: Command-line tool để tương tác với Kubernetes.
-4. **[Trivy](https://aquasecurity.github.io/trivy/v0.50/getting-started/installation/)** *(Tùy chọn nhưng khuyến nghị)*: Tải file `trivy.exe` và đặt cùng thư mục với dự án để script tự động quét bảo mật file YAML.
 
 ### 📁 Cấu trúc thư mục
 
