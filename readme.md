@@ -3,9 +3,8 @@
 ## Task 1: Kubernetes Security Hardening 
 
 ### 📋 Yêu cầu hệ thống (Prerequisites)
-
-Để chạy được bài Lab này, máy tính của bạn (đặc biệt là Windows) cần cài đặt sẵn các công cụ sau:
-
+Môi trường: Windows OS
+Cần cài đặt sẵn các công cụ sau:
 1. **[Docker Desktop](https://www.docker.com/products/docker-desktop/)**: Phải đang chạy ngầm (running) để Kind có thể tạo container.
 2. **[Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)**: Công cụ để chạy local Kubernetes cluster.
 3. **[kubectl](https://kubernetes.io/docs/tasks/tools/)**: Command-line tool để tương tác với Kubernetes.
