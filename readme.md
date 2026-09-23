@@ -324,15 +324,3 @@ SSH Target
 ```
 
 ---
-
-# 📌 Summary
-
-| Task | Nội dung | Công nghệ chính |
-|---|---|---|
-| Task 1 | Kubernetes Security Hardening | Docker, Kind, Kubernetes, kubectl, Trivy |
-| Task 2 | ZTNA / Identity-aware Proxy | Pomerium, GitHub OAuth, Docker Compose, SSH |
-
-Hai task tập trung vào hai khía cạnh khác nhau của SecOps:
-
-- **Task 1:** Hardening workload và giảm security risk trong Kubernetes.
-- **Task 2:** Kiểm soát truy cập tài nguyên nội bộ dựa trên identity và access policy.
